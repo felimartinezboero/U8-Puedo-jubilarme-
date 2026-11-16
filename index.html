@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>¿Puedo jubilarme?</title>
+    <script src="puedo-jubilarme.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>¿Puedo jubilarme?</h1>
+      <form id="form-jubilacion">
+        <label for="edad">¿Cuál es tu edad?</label>
+        <input id="edad" name="edad" type="number" min="0" required />
+
+        <label for="genero">¿Sos hombre o mujer?</label>
+        <select id="genero" name="genero" required>
+          <option value="" selected disabled>Elegí una opción</option>
+          <option value="mujer">Mujer</option>
+          <option value="hombre">Hombre</option>
+        </select>
+
+        <button type="submit">Consultar</button>
+      </form>
+      <output id="resultado" aria-live="polite"></output>
+    </main>
+  </body>
+</html>
